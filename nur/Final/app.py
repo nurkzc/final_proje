@@ -4,8 +4,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 from werkzeug.security import generate_password_hash, check_password_hash
 from datetime import datetime
 from urllib.parse import urlparse, urljoin
-import json 
-import io
+import json, io, os
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Gelistirme_Anahtari'
@@ -350,11 +349,5 @@ def edit(id):
         return redirect(url_for('dashboard'))
     return render_template('edit.html', talep=talep)
 
-#if __name__ == '__main__':
-#    with app.app_context():
-  #      db.create_all()
-  #  app.run(debug=True)
-
- import os
- if __name__ == "__main__":
-app.run(host"0.0.0.0",port=int(os.environ.get("PORT",5000)))
+if __name__ == "__main__":
+    app.run(host"0.0.0.0",port=int(os.environ.get("PORT",5000)))
