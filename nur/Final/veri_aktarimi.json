@@ -1,0 +1,28 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "KaptanFve",
+            "email": "okunanlar508@gmail.com",
+            "is_admin": true
+        },
+        {
+            "id": 2,
+            "name": "BeratÇet",
+            "email": "asd@gmail.com",
+            "is_admin": false
+        }
+    ],
+    "talepler": [
+        {
+            "id": 1,
+            "subject": "destek talep açamıyorum",
+            "description": "asdasdasdas",
+            "priority": "high",
+            "tags": "merhaba",
+            "reply": "aasşdljbhşajlksd",
+            "created_at": "2025-05-25T10:40:59.351448",
+            "kullanici_id": 2
+        }
+    ]
+}
